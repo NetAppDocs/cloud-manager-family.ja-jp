@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head class="at-element-marker">
+  <title>Cloud Manager のドキュメント | NetApp Documentation</title>
+  <meta charset="utf-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge,chrome=1">
+  <meta http-equiv="language" content="en">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta property="og:title" content="Cloud Manager のドキュメント | NetApp Documentation" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="https://docs.netapp.com/ja-jp/cloud-manager-family/index.html" />
+	<meta property="og:description" content="Cloud Manager は、 IT エキスパートとクラウドアーキテクトに、ハイブリッドクラウド環境でデータの管理、監視、自動化を行うための一元的なコントロールプレーンを提供します。製品別のドキュメント領域を参照するか、上の検索を使用して、 Cloud Manager のドキュメント内の任意の場所でコンテンツを..." />
+  <meta property="og:image" content="https://docs.netapp.com/ja-jp/cloud-manager-family/images/logo-tophat-social.png" />
+  <meta property="og:image:alt" content="NetApp Logo" />
+  <meta name="format-detection" content="telephone=no">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="encoding" content="utf-8">
+  <meta http-equiv="nss-type" content="Product Documentation"/>
+  <meta http-equiv="nss-subtype" content="User Guide"/><meta name="description" content="Cloud Manager は、 IT エキスパートとクラウドアーキテクトに、ハイブリッドクラウド環境でデータの管理、監視、自動化を行うための一元的なコントロールプレーンを提供します。製品別のドキュメント領域を参照するか、上の検索を使用して、 Cloud Manager のドキュメント内の任意の場所でコンテンツを...">
+  <meta name="keywords" content=" "><!-- Icons -->
+  <link rel="icon" href="/ja-jp/cloud-manager-family/images/favicon.ico" type="image/x-icon">
+
+  <!-- RSS Feed --><link rel="alternate" type="application/rss+xml" title="NetApp Documentation" href="/ja-jp/cloud-manager-family/feed.xml"><!-- CSS Definitions: NetApp CSS should be defined after generic css -->
+
+  <!-- Elastic Search -->
+  <link rel="stylesheet" href="//cdn.jsdelivr.net/searchkit/0.10.0/theme.css">
+
+  <!-- Controls AsciiDoctor Admonition Blocks -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/cloud-manager-family/css/font-awesome.min.css">
+
+  <!-- Controls the shadow effect for search dropdown menu -->
+  <link rel="stylesheet" href="/ja-jp/cloud-manager-family/css/boxshadowproperties.css">
+
+  <!-- NetApp CSS controls the technical content -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/cloud-manager-family/css/netapp.css">
+
+  <!-- WWW CSS Content -->
+  <link rel="stylesheet" type="text/css" href="/ja-jp/cloud-manager-family/css/www-luci-dotcom.min.css">
+  <link rel="stylesheet" type="text/css" href="/ja-jp/cloud-manager-family/css/www-netapp-dotcom.css">
+  <link rel="stylesheet" href="/ja-jp/cloud-manager-family/css/www-netapp-library-critical.min.css" media="all" >
+  <link rel="stylesheet" href="/ja-jp/cloud-manager-family/css/www-netapp-library-non-critical.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <link rel="stylesheet" href="/ja-jp/cloud-manager-family/css/www-netapp-library-global-header-footer.min.css">
+
+  <!-- NetApp IE Customizations -->
+  <link rel="stylesheet" href='/ja-jp/cloud-manager-family/css/na-utility.css' type='text/css'>
+  <link rel="stylesheet" href='/ja-jp/cloud-manager-family/css/na-sidebar.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/cloud-manager-family/css/clouddocs.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/cloud-manager-family/css/na-pagenav.css' type='text/css'>
+
+  
+  <link rel="stylesheet" href="/ja-jp/cloud-manager-family/css/landing-page.css" type="text/css">
+  <link rel="stylesheet" href="/ja-jp/cloud-manager-family/css/tabbed-blocks.css" type="text/css">
+  <link rel='stylesheet' href='/ja-jp/cloud-manager-family/css/na-feature.css' type='text/css'><script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-cookie/1.4.1/jquery.cookie.min.js"></script>
+
+  <!-- Used for Product Family Page Sidebar Visibility --><link rel="stylesheet" href='/ja-jp/cloud-manager-family/css/product-family.css' type="text/css">
+  <script src='/ja-jp/cloud-manager-family/js/product-family.js'></script><!-- Used to import Promise for IE. Required for SearchKit -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bluebird/3.3.5/bluebird.min.js"></script><script src='/ja-jp/cloud-manager-family/js/na-search.js'></script><script src='/ja-jp/cloud-manager-family/js/na-pagenav.js'></script><link rel='stylesheet' href='/ja-jp/cloud-manager-family/css/prism.css' type='text/css'>
+  <link rel='stylesheet' href='/ja-jp/cloud-manager-family/css/prism-netapp.css' type='text/css'>
+
+
+  <script src='/ja-jp/cloud-manager-family/js/na-utility.js'></script>
+  <script src='/ja-jp/cloud-manager-family/js/clouddocs.js'></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    var head = document.getElementsByTagName('head')[0];
+    var adobe = document.createElement("script");
+    adobe.type = "text/javascript";
+    adobe.src = "//assets.adobedtm.com/60287eadf1ee/c284da483c83/launch-e9ff3acac59f.min.js";
+    head.appendChild(adobe);
+  }
+  </script>
+  <script src='/ja-jp/cloud-manager-family/js/jquery.navgoco.min.js'></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+  <script src='/ja-jp/cloud-manager-family/js/toc.js'></script>
+  <script src='/ja-jp/cloud-manager-family/js/customscripts.js'></script><script>
+      $(document).ready(function() {
+          
+          var collapseOnInit = true;
+          
+
+          var navSettings = {
+              "caretHtml": '',
+              "accordion": collapseOnInit,
+              "openClass": 'active', // open
+              "save": false, // leave false or nav highlighting doesn't work right
+              "cookie": {
+                  "name": 'navgoco',
+                  "expires": false,
+                  "path": '/'
+              },
+              "slide": {
+                  "duration": 400,
+                  "easing": 'swing'
+              }
+          };
+
+          // Initialize navgoco with default options
+          $("#mysidebar").navgoco(navSettings);
+          
+
+          $("#collapseAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', false);
+          });
+
+          $("#expandAll").click(function(e) {
+              e.preventDefault();
+              $("#mysidebar").navgoco('toggle', true);
+          });
+
+      });
+
+  </script>
+  <script>
+      $(document).ready(function() {
+          $("#tg-sb-link").click(function() {
+              $("#tg-sb-sidebar").toggle();
+              $("#tg-sb-content").toggleClass('col-md-9');
+              $("#tg-sb-content").toggleClass('col-md-12');
+              $("#tg-sb-icon").toggleClass('fa-toggle-on');
+              $("#tg-sb-icon").toggleClass('fa-toggle-off');
+          });
+      });
+  </script><script async src="https://www.googletagmanager.com/gtag/js?id=UA-81697994-3"></script>
+  <script>
+  if (document.location.hostname === "docs.netapp.com") {
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'UA-81697994-3');
+  }
+  </script>
+  <script src='/ja-jp/cloud-manager-family/js/version-dropdown.js'></script>
+  <script src='/ja-jp/cloud-manager-family/js/FileSaver.min.js'></script>
+  <script src='/ja-jp/cloud-manager-family/js/jszip-utils.min.js'></script>
+  <script src='/ja-jp/cloud-manager-family/js/jszip.min.js'></script>
+  <script src='/ja-jp/cloud-manager-family/js/pdf-ux.js'></script>
+</head>
+
+
+  <body class role="document">
+    <div id="page" class="n-off-canvas-menu">
+      <div class="n-off-canvas-menu__menu"><!--TODO: Add offcanvas code --></div>
+      <div class="n-off-canvas-menu__content-wrap">
+        <header class="site-header" id="banner">
+  
+  <!-- Start Page Toolbar -->
+  <div class="page-nav-toolbar">
+    <div id="version-dropdown"></div>
+    <div class="page-nav-contribute"  >
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-family/issues/new?body=Page%3A%20[Cloud Manager のドキュメント](https://docs.netapp.com/ja-jp/cloud-manager-family/index.html)" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-family/images/discuss-sm.svg" class="github-icon" />ドキュメントの変更をリクエスト</a>
+      <a target="_blank" href="https://github.com/NetAppDocs/cloud-manager-family/blob/main/index.adoc" class="page-nav-contribute-link" role="button"><img src="/ja-jp/cloud-manager-family/images/edit-sm.svg" class="github-icon" />GitHub で編集</a>
+      <a target="_blank" href="https://docs.netapp.com/us-en/contribute/" class="page-nav-contribute-link"  ><img src="/ja-jp/cloud-manager-family/images/article-sm.svg" class="github-icon" />寄稿者向けガイド</a>
+    </div>
+    <div class="page-nav-container">
+      <nav class="page-nav-fixed">
+        <div class="page-nav-title">このページ</div>
+        <div class="page-nav-links">
+          <ul class="page-nav-inner" id="page-menu"></ul>
+        </div>
+      </nav>
+    </div>
+  </div>
+  
+  <!-- Start top_hat -->
+  <div class="n-top-hat">
+    <div class="n-container">
+      <div class="n-top-hat__cross-property-nav">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/products-a-z/" class="n-top-hat__link">製品とソリューション</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/support-and-training/netapp-university/" class="n-top-hat__link">サポートとトレーニング</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://cloud.netapp.com" class="n-top-hat__link">Cloud Central</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://community.netapp.com/" class="n-top-hat__link">コミュニティ</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://blog.netapp.com/" class="n-top-hat__link">ブログ</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://customers.netapp.com/en/" class="n-top-hat__link">ユーザ事例</a>
+          </li>
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+      <div class="n-top-hat__utils">
+        <ul class="n-top-hat__list">
+          <li class="n-top-hat__list-item">
+            <a href="https://www.netapp.com/us/contact-us/index.aspx" target="_self" class="n-top-hat__link" data-ntap-ui="contact-us">お問い合わせ</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <!-- End top_hat -->
+
+  <!-- Start property bar -->
+  <style>
+    .n-property-navigation-bar__menus--desktop-experience .n-menu--mega__default-content__heading span {
+    color: #34B0FF;
+    }
+  </style>
+  <div class="n-property-bar " data-ntap-ui="sticky-nav">
+    <div class="n-property-bar__inner-wrap">
+      <div class="n-property-bar__menu-toggle">
+        <a href="#" class="n-property-bar__menu-toggle-link">
+          <span class="n-property-bar__menu-toggle-text">Menu</span>
+          <svg class="n-icon-bars n-property-bar__menu-toggle-icon" aria-labelledby="title">
+            <title>bars</title>
+            <use xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#bars"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="n-property-bar__property-mark ">
+        <a href="https://www.netapp.com" class="n-property-bar__property-link">
+          <div class="n-property-bar__logo">
+            <svg class="n-icon-netapp-mark n-icon-netapp-mark n-property-bar__netapp-mark-icon" aria-labelledby="title">
+              <title>netapp-mark</title>
+              <use xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#netapp-mark"></use>
+            </svg>
+            <svg class="n-icon-netapp-logo n-property-bar__logo-svg" aria-labelledby="title">
+              <title>netapp-logo</title>
+              <use xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#netapp-logo"></use>
+            </svg>
+          </div>
+        </a>
+      </div>
+
+      
+      <div class="search-property-bar">
+        <div id="search-demo-container" class="searchbox n-property-bar__search">
+          <div id="react-search" 
+          data-search-html="/ja-jp/cloud-manager-family/search.html"
+          data-type="widget" 
+          data-placeholder="ドキュメントを検索" 
+          data-no-results-found="{query}に該当する結果はありません" 
+          data-did-you-mean="{suggestion} を検索" 
+          data-no-results-found-did-you-mean="{query} に該当する結果はありません。{suggestion} の間違いではありませんか?" 
+          data-results-found="{hitCount} 件見つかりました"  
+          data-sk-es-pf-indexes=""></div>
+          <button class="n-property-bar__search-toggle-button" type="button">
+            <svg class="n-icon-search n-property-bar__search-toggle-button-icon" aria-labelledby="title">
+              <title>search</title>
+              <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#search"></use>
+            </svg>
+          </button>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+  <div class="n-property-bar__toolbar">
+    <!-- Start Language Selector --><div id="ie-i18n" class="n-property-bar__lang-selector">
+      <div id="ie-i18n-menu">
+      <span class="ie-i18n-lang">日本語</span>
+        <button class="ie-i18n-icon-container" type="button">
+          <svg class="n-globe__icon" aria-labelledby="title">
+            <title>globe</title>
+            <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#globe"></use>
+          </svg>
+        </button>
+      </div>
+      <div id="n-property-navigation-bar__menu--language-selector" class="ie-i18n-results-container n-menu n-menu--v3 n-menu--is-active" style="display: none;">
+        <div class="n-language-selector-menu">
+          <ul class="n-menu__list">
+            <li class="n-menu__list-column">
+              <ul class="n-menu__list"><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ja-jp/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">日本語</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/us-en/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">English</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/zh-cn/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">简体中文</span></a>
+                </li><li class="n-menu__list-item n-menu__list-item--level-1">
+                  <a href="https://docs.netapp.com/ko-kr/cloud-manager-family/index.html" class="n-menu__header-text"><span translate="no" class="notranslate">한국어</span></a>
+                </li></ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div><!-- End Language Selector -->
+
+    <div class="n-property-bar__cta"></div>
+  </div>
+  <script>
+    $(function(){
+        var currentLocalization = $('html').attr('lang');
+
+        var localizationsDictionary = {
+            "en-CA" : "https://www.netapp.com/search/index.aspx?for_cr=canada&",
+            "en-IN" : "https://www.netapp.com/search/index.aspx?for_cr=india&",
+            "nl-NL" : "https://www.netapp.com/search/index.aspx?for_cr=netherlands&",
+            "ru-RU" : "https://www.netapp.com/search/index.aspx?for_cr=russia&",
+            "sv-SE" : "https://www.netapp.com/search/index.aspx?for_cr=sweden&",
+            "it-IT" : "https://www.netapp.com/search/index.aspx?for_cr=italy&",
+            "he-IL" : "https://www.netapp.com/search/index.aspx?for_cr=israel&",
+            "ko-KR" : "https://www.netapp.com/search/index.aspx?for_cr=korea&",
+            "zh-TW" : "https://www.netapp.com/search/index.aspx?for_cr=taiwan&",
+            "en-GB" : "https://www.netapp.com/search/index.aspx?for_cr=unitedkingdom&",
+            "en-SG" : "https://www.netapp.com/search/index.aspx?for_cr=asean&",
+            "en-AU" : "https://www.netapp.com/search/index.aspx?for_cr=australia&",
+            "pt-BR" : "https://www.netapp.com/search/index.aspx?for_cr=brasil&",
+            "de-CH" : "https://www.netapp.com/search/index.aspx?for_cr=switzerland&",
+            "es-MX" : "https://www.netapp.com/search/index.aspx?for_cr=mexico&"
+        };
+
+        if($('html').hasClass('ntap-whitelisted') && localizationsDictionary.hasOwnProperty(currentLocalization)) {
+            $('.n-property-bar__property-link').attr('href', '/');
+        }
+    });
+  </script>
+  <!-- End property bar -->
+</header>
+
+
+        <main id="n-main-content" class="n-main-content">
+          <div class="ie-main product-family"><div class="col-md-3">
+    <div class="product-family-linkheading">コンテンツを参照</div>
+    <ul id="product-family-links"><li class="active"><a href="#" class="product-family-space" data-tags="all">すべてのコンテンツ</a></li><li><a href="#" class="product-family-space" data-tags="get-started">はじめに</a></li><li><a href="#" class="product-family-space" data-tags="relnotes">リリースノート</a></li><li><a href="#" class="product-family-space" data-tags="admin">コネクタとアカウント</a></li><li><a href="#" class="product-family-space" data-tags="activeiq">実用的な情報</a></li><li><a href="#" class="product-family-space" data-tags="aws">Amazon Web Services の</a></li><li><a href="#" class="product-family-space" data-tags="automation">自動化</a></li><li><a href="#" class="product-family-space" data-tags="compute">コンピューティング</a></li><li><a href="#" class="product-family-space" data-tags="governance">データガバナンス</a></li><li><a href="#" class="product-family-space" data-tags="protection">データ保護</a></li><li><a href="#" class="product-family-space" data-tags="replication">データレプリケーション</a></li><li><a href="#" class="product-family-space" data-tags="sharing">ファイル共有</a></li><li><a href="#" class="product-family-space" data-tags="kubernetes">Kubernetes</a></li><li><a href="#" class="product-family-space" data-tags="azure">Microsoft Azure</a></li><li><a href="#" class="product-family-space" data-tags="monitoring">監視</a></li><li><a href="#" class="product-family-space" data-tags="gcp">Google Cloud</a></li><li><a href="#" class="product-family-space" data-tags="ransomware">ランサムウェア</a></li><li><a href="#" class="product-family-space" data-tags="storage">ストレージ</a></li></ul>
+</div>
+<div class="tile-container">
+        <article class="page-content">
+            <div class="ie-utility">
+  <div class="ie-menu">
+    <div class="n-breadcrumb">
+      <ul class="n-breadcrumb__list">
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com">docs.netapp.com</a>
+        </li>
+        
+        <li class="n-breadcrumb__list-item">
+          <a href="https://docs.netapp.com/ja-jp/cloud/">Cloud Docs</a>
+        </li>
+        
+
+        
+
+        <li class="n-breadcrumb__list-item">
+          <a href="/ja-jp/cloud-manager-family/">Cloud&nbsp;Manager</a>
+        </li>
+
+      </ul>
+    </div>
+    <div style="clear: both"></div><!-- Main needs to have height -->
+  </div>
+</div>
+
+            <div class="n-band n-band--docs n-band--belted">
+                <div class="n-container" style="margin: 0 auto; padding: 0 16px;">
+                    <div class="n-row">                      
+                        <div class="n-col-sm-12"><div class="ie-nmt-disclaimer">
+                              <span>
+                                <div class="ie-nmt-disclaimer-container">
+                                  <div class="ie-nmt-disclaimer-icon">
+                                    <svg class="luci-icon" aria-hidden="true">
+                                      <use xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#circle-info">
+                                    </svg>
+                                  </div>
+                                  <div class="ie-nmt-disclaimer-content">
+                                    <span> 日本語は機械翻訳による参考訳です。内容に矛盾や不一致があった場合には、英語の内容が優先されます。 </span>
+                                  </div>
+                                  <div style="clear:both;"></div>
+                                </div>
+                              </span>
+                            </div><div class="n-doc__component-detail-heading-wrap">
+                                <h1 class="n-doc__component-detail-heading">Cloud Manager のドキュメント</h1>
+                            </div><section class="n-band__section">
+                                <p>Cloud Manager provides IT experts and cloud architects with a centralized control plane to manage, monitor, and automate data in hybrid cloud environments. Browse the docs by product area or use the search above to find content anywhere in the Cloud Manager docs.</p>
+                            </section><div class="n-band__content">
+<div id="selected-sidelink"><span>すべてのコンテンツ</span></div>
+    <div class="n-layout-flex product-family-tile-container" data-ntap-layout="4"><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, get-started, admin">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-docs.png" alt="セットアップと管理"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html'>セットアップと管理</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Cloud Manager の使用を開始し、コネクタやアカウントなどを管理する方法について説明します。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, relnotes">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-docs.png" alt="リリースノート"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-relnotes/index.html'>リリースノート</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Cloud Manager の新機能をご確認ください。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, activeiq">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-activeiq.png" alt="Active IQ デジタルアドバイザ"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/concept-aiq-digital-advisor.html'>Active IQ デジタルアドバイザ</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">実用的な情報でストレージの健常性を最適化</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, aws">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-fsx.png" alt="ONTAP 対応の Amazon FSX"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html'>ONTAP 対応の Amazon FSX</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">AWS が管理する標準サービスとして、 ONTAP の全機能を使用できます。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, api, automation">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-api.png" alt="API"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-automation/index.html'>API</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">クラウドベースのリソースをプログラムで管理できます。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, automation">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-app-template.png" alt="AppTemplate （アプリケーションテンプレート）"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-app-template/index.html'>AppTemplate （アプリケーションテンプレート）</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Cloud Manager でアクションを自動化することで、プロビジョニングを高速化し、手動作業を排除できます。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, azure">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-anf.png" alt="Azure NetApp Files の特長"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html'>Azure NetApp Files の特長</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">コアビジネスアプリケーション向けのハイパフォーマンスなファイルストレージサービス。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, aws, azure, gcp, protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-backup.png" alt="クラウドバックアップ"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html'>クラウドバックアップ</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">クラウドとオンプレミスのデータをバックアップ、リストア</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, governance, aws, azure, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-data-sense.png" alt="クラウドデータの意味"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html'>クラウドデータの意味</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">アプリケーションデータとクラウド環境のプライバシーを確保</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, aws, azure, gcp, replication">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-sync.png" alt="Cloud Sync"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-sync/index.html'>Cloud Sync</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">オンプレミスとクラウドのデータストア間でデータを同期</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, aws, azure, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-tiering.png" alt="クラウド階層化"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-tiering/index.html'>クラウド階層化</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">オンプレミスの ONTAP ストレージをクラウドに拡張</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, aws, azure, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cvo.png" alt="Cloud Volumes ONTAP"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html'>Cloud Volumes ONTAP</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">クラウドストレージを低コストでインテリジェントに、コンプライアンスに準拠し、セキュアに構築できます。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, aws">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cvs.png" alt="Cloud Volumes Service for AWS"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-aws/index.html'>Cloud Volumes Service for AWS</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">オールフラッシュのパフォーマンスを発揮するクラウドネイティブなファイルサービスです。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cvs.png" alt="Cloud Volumes Service for Google Cloud"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/index.html'>Cloud Volumes Service for Google Cloud</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">ファイルストレージをセキュアに、保護、高速化します。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, compute, aws">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-compute.png" alt="コンピューティング"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-compute/index.html'>コンピューティング</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">クラウドコンピューティング関連の支出を可視化し、削減可能なコストを特定できます。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, sharing, aws, azure, gcp">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-cache.png" alt="グローバルファイルキャッシュ"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-file-cache/index.html'>グローバルファイルキャッシュ</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">分散した従業員にリアルタイムのグローバルファイル共有を提供します。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, kubernetes, aws, azure">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-kubernetes.png" alt="Kubernetes クラスタ"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-kubernetes/index.html'>Kubernetes クラスタ</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">ハイブリッドクラウド内の Kubernetes クラスタの高度なデータ管理。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, monitoring">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-monitoring.png" alt="監視"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-monitoring/index.html'>監視</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">Cloud Volumes ONTAP の健全性とパフォーマンスを把握できます。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, storage">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-onprem.png" alt="オンプレミスの ONTAP クラスタ"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html'>オンプレミスの ONTAP クラスタ</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">ハイブリッドクラウド全体にわたって NetApp AFF システムと FAS システムを管理できます。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, ransomware">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-ransomware.png" alt="ランサムウェアからの保護"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-ransomware/index.html'>ランサムウェアからの保護</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">サイバー攻撃に対するデータの復元力を評価します。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, replication, protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-replication.png" alt="レプリケーション"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-replication/index.html'>レプリケーション</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">バックアップとディザスタリカバリをサポートするために、ストレージシステム間でデータをレプリケートします。</p>
+                </div>
+            </div>
+        </div><div class="n-feature-block n-feature-block__align--center n-layout-flex__item ie-feature-block product-family-tile"
+            data-tags="all, protection">
+            <div class="n-feature-block__content">
+                <div class="ie-feature-block__header">
+                    <div class="ie-feature-block__image product-family-tile-icon"><img src="./media/icon-snapcenter.png" alt="SnapCenter サービス"></div>
+                </div>
+                <div class="ie-feature-block__section">
+                    <a class="ie-feature-block__link product-family-tile-title"
+                        href='https://docs.netapp.com/us-en/cloud-manager-snapcenter/index.html'>SnapCenter サービス</a>
+                    <p class="ie-feature-block__summary product-family-tile-summary">クラウドでのアプリケーションと整合性のあるデータ保護</p>
+                </div>
+            </div>
+        </div></div>
+</div>
+</div>
+                    </div>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div class="page-nav-toolbar"></div>
+    <div style="clear:both"></div>
+</div>
+        </main>
+
+        <footer class="n-footer">
+  <div class="n-footer__bottom">
+    <div class="n-container">
+      <div class="n-footer__bottom-left">
+
+        <div class="n-footer__copyright">
+          <ul class="n-footer__copyright-list">
+            <li class="n-footer__copyright-link">
+            <a href="https://www.netapp.com/us/legal/copyright.aspx">© 2022 NetApp, Inc.</a>
+            </li>
+
+</ul>
+</div>
+<div class="n-footer__social-links">
+<ul class="n-footer__social-link-list">
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-blog" href="https://blog.netapp.com" target="_blank" title="blog" alt="blog">
+<span class="n-footer__social-link-text">blog</span>
+<svg class="n-icon-blog n-footer__social-link-icon" aria-labelledby="title">
+  <title>blog@</title>
+  <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#blog"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-community" href="https://community.netapp.com/" target="_blank" title="community" alt="community">
+<span class="n-footer__social-link-text">community</span>
+<svg class="n-icon-community n-footer__social-link-icon" aria-labelledby="title">
+<title>community@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#comments"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-twitter" href="https://twitter.com/netapp" target="_blank" title="twitter" alt="twitter">
+<span class="n-footer__social-link-text">twitter</span>
+<svg class="n-icon-twitter n-footer__social-link-icon" aria-labelledby="title">
+<title>twitter@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#twitter"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-facebook" href="https://www.facebook.com/NetApp" target="_blank" title="facebook" alt="facebook">
+<span class="n-footer__social-link-text">facebook</span>
+<svg class="n-icon-facebook n-footer__social-link-icon" aria-labelledby="title">
+<title>facebook@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#facebook"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-linkedin" href="https://www.linkedin.com/company/netapp" target="_blank" title="linkedin" alt="linkedin">
+<span class="n-footer__social-link-text">linkedin</span>
+<svg class="n-icon-linkedin n-footer__social-link-icon" aria-labelledby="title">
+<title>linkedin@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#linkedin"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-youtube" href="https://www.youtube.com/user/NetAppTV" target="_blank" title="youtube" alt="youtube">
+<span class="n-footer__social-link-text">youtube</span>
+<svg class="n-icon-youtube n-footer__social-link-icon" aria-labelledby="title">
+<title>youtube@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#youtube"></use>
+</svg>
+
+</a>
+</li>
+<li class="n-footer__social-link-list-item">
+<a class="n-footer__social-link" data-ntap-social="follow-slideshare" href="https://www.slideshare.net/NetApp" target="_blank" title="slideshare" alt="slideshare">
+<span class="n-footer__social-link-text">slideshare</span>
+<svg class="n-icon-slideshare n-footer__social-link-icon" aria-labelledby="title">
+<title>slideshare@</title>
+<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="/ja-jp/cloud-manager-family/common/svg/sprite.svg#slideshare"></use>
+</svg>
+
+</a>
+</li>
+</ul>
+</div>
+
+</div>
+<div class="n-footer__bottom-right">
+  <p class="n-footer__fine-print">Web サイトについてのフィードバックを<a target="_self" href="javascript:netapp_mailto()" class="n-footer__copyright">お寄せください</a>
+  <a href="https://docs.netapp.com/ja-jp/announcements/" class="n-footer__copyright">お知らせ</a>
+  </p>
+</div>
+</div>
+</div>
+</footer>
+
+      </div><!-- Elasticsearch JS -->
+      <script type="text/javascript" src='/ja-jp/cloud-manager-family/js/bundle.js'></script>
+
+      <!-- Syntax Highlighting -->
+      <script type="text/javascript" src='/ja-jp/cloud-manager-family/js/prism.js'></script>
+      <script type="text/javascript" src='/ja-jp/cloud-manager-family/js/prism-curl.js'></script>
+    </div>
+    <script>
+      document.body.offsetWidth=1903;
+      cookieLaw = {}
+      cookieLaw.euCountry = "US";
+      cookieLaw.invoke = function(){return false;}
+    </script>
+    <script src='/ja-jp/cloud-manager-family/js/www-ntap.js'></script>
+    <script src='/ja-jp/cloud-manager-family/js/tabbed-blocks.js'></script>
+  </body></html>
