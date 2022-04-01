@@ -1,0 +1,14 @@
+---
+layout: product-family 
+permalink: index.html 
+lead: Cloud Manager provides IT experts and cloud architects with a centralized control plane to manage, monitor, and automate data in hybrid cloud environments. Browse the docs by product area or use the search above to find content anywhere in the Cloud Manager docs. 
+summary: Cloud Manager は、 IT エキスパートとクラウドアーキテクトに、ハイブリッドクラウド環境でデータの管理、監視、自動化を行うための一元的なコントロールプレーンを提供します。製品別のドキュメント領域を参照するか、上の検索を使用して、 Cloud Manager のドキュメント内の任意の場所でコンテンツを検索します。 
+---
+= Cloud Manager のドキュメント
+:hardbreaks:
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

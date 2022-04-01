@@ -1,0 +1,165 @@
+---
+settings:
+  name: Cloud Manager
+  platform: cloud
+  search: clouddocs-cloud-manager-relnotes_main-prod,clouddocs-cloud-manager-setup-admin_main-prod,clouddocs-cloud-manager-cloud-volumes-ontap_main-prod,clouddocs-cloud-manager-ontap-onprem_main-prod,clouddocs-cloud-manager-azure-netapp-files_main-prod,clouddocs-cloud-manager-fsx-ontap_main-prod,clouddocs-cloud-manager-cloud-volumes-service-aws_main-prod,clouddocs-cloud-manager-cloud-volumes-service-gcp_main-prod,clouddocs-cloud-manager-kubernetes_main-prod,clouddocs-cloud-manager-object-storage_main-prod,clouddocs-cloud-manager-app-template_main-prod,clouddocs-cloud-manager-backup-restore_main-prod,clouddocs-cloud-manager-snapcenter_main-prod,clouddocs-cloud-manager-sync_main-prod,clouddocs-cloud-manager-data-sense_main-prod,clouddocs-cloud-manager-tiering_main-prod,clouddocs-cloud-manager-ransomware_main-prod,clouddocs-cloud-manager-replication_main-prod,clouddocs-cloud-manager-monitoring_main-prod,clouddocs-cloud-manager-file-cache_main-prod,clouddocs-cloud-manager-compute_main-prod,clouddocs-cloud-manager-automation_main-prod,clouddocs-cloud-volumes-ontap-relnotes_main-prod
+  internal:
+    pdf_enabled: true
+  prod:
+    pdf_enabled: true
+    harmony_enabled: false
+  langs: ja-jp,us-en,zh-cn,ko-kr
+sidebar:
+  entries:
+  - title: Cloud Manager のすべてのドキュメント
+    url: "/index.html"
+product-family:
+  sidebarlinks:
+  - title: すべてのコンテンツ
+    tags: all
+    class: active
+  - title: はじめに
+    tags: get-started
+  - title: リリースノート
+    tags: relnotes
+  - title: コネクタとアカウント
+    tags: admin
+  - title: 実用的な情報
+    tags: activeiq
+  - title: Amazon Web Services の
+    tags: aws
+  - title: 自動化
+    tags: automation
+  - title: コンピューティング
+    tags: compute
+  - title: データガバナンス
+    tags: governance
+  - title: データ保護
+    tags: protection
+  - title: データレプリケーション
+    tags: replication
+  - title: ファイル共有
+    tags: sharing
+  - title: Kubernetes
+    tags: kubernetes
+  - title: Microsoft Azure
+    tags: azure
+  - title: 監視
+    tags: monitoring
+  - title: Google Cloud
+    tags: gcp
+  - title: ランサムウェア
+    tags: ransomware
+  - title: ストレージ
+    tags: storage
+  tiles:
+  - title: セットアップと管理
+    icon: "./media/icon-docs.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-setup-admin/index.html
+    summary: Cloud Manager の使用を開始し、コネクタやアカウントなどを管理する方法について説明します。
+    tags: all, get-started, admin
+  - title: リリースノート
+    icon: "./media/icon-docs.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-relnotes/index.html
+    summary: Cloud Manager の新機能をご確認ください。
+    tags: all, relnotes
+  - title: Active IQ デジタルアドバイザ
+    icon: "./media/icon-activeiq.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/concept-aiq-digital-advisor.html
+    tags: all, activeiq
+    summary: 実用的な情報でストレージの健常性を最適化
+  - title: ONTAP 対応の Amazon FSX
+    icon: "./media/icon-fsx.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-fsx-ontap/index.html
+    summary: AWS が管理する標準サービスとして、 ONTAP の全機能を使用できます。
+    tags: all, storage, aws
+  - title: API
+    icon: "./media/icon-api.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-automation/index.html
+    summary: クラウドベースのリソースをプログラムで管理できます。
+    tags: all, api, automation
+  - title: AppTemplate （アプリケーションテンプレート）
+    icon: "./media/icon-app-template.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-app-template/index.html
+    summary: Cloud Manager でアクションを自動化することで、プロビジョニングを高速化し、手動作業を排除できます。
+    tags: all, automation
+  - title: Azure NetApp Files の特長
+    icon: "./media/icon-anf.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-azure-netapp-files/index.html
+    summary: コアビジネスアプリケーション向けのハイパフォーマンスなファイルストレージサービス。
+    tags: all, storage, azure
+  - title: クラウドバックアップ
+    icon: "./media/icon-backup.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-backup-restore/index.html
+    summary: クラウドとオンプレミスのデータをバックアップ、リストア
+    tags: all, aws, azure, gcp, protection
+  - title: クラウドデータの意味
+    icon: "./media/icon-data-sense.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-data-sense/index.html
+    summary: アプリケーションデータとクラウド環境のプライバシーを確保
+    tags: all, governance, aws, azure, gcp
+  - title: Cloud Sync
+    icon: "./media/icon-sync.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-sync/index.html
+    summary: オンプレミスとクラウドのデータストア間でデータを同期
+    tags: all, aws, azure, gcp, replication
+  - title: クラウド階層化
+    icon: "./media/icon-tiering.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-tiering/index.html
+    summary: オンプレミスの ONTAP ストレージをクラウドに拡張
+    tags: all, aws, azure, gcp
+  - title: Cloud Volumes ONTAP
+    icon: "./media/icon-cvo.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-ontap/index.html
+    summary: クラウドストレージを低コストでインテリジェントに、コンプライアンスに準拠し、セキュアに構築できます。
+    tags: all, storage, aws, azure, gcp
+  - title: Cloud Volumes Service for AWS
+    icon: "./media/icon-cvs.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-aws/index.html
+    summary: オールフラッシュのパフォーマンスを発揮するクラウドネイティブなファイルサービスです。
+    tags: all, storage, aws
+  - title: Cloud Volumes Service for Google Cloud
+    icon: "./media/icon-cvs.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-cloud-volumes-service-gcp/index.html
+    summary: ファイルストレージをセキュアに、保護、高速化します。
+    tags: all, storage, gcp
+  - title: コンピューティング
+    icon: "./media/icon-compute.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-compute/index.html
+    summary: クラウドコンピューティング関連の支出を可視化し、削減可能なコストを特定できます。
+    tags: all, compute, aws
+  - title: グローバルファイルキャッシュ
+    icon: "./media/icon-cache.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-file-cache/index.html
+    summary: 分散した従業員にリアルタイムのグローバルファイル共有を提供します。
+    tags: all, sharing, aws, azure, gcp
+  - title: Kubernetes クラスタ
+    icon: "./media/icon-kubernetes.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-kubernetes/index.html
+    summary: ハイブリッドクラウド内の Kubernetes クラスタの高度なデータ管理。
+    tags: all, kubernetes, aws, azure
+  - title: 監視
+    icon: "./media/icon-monitoring.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-monitoring/index.html
+    summary: Cloud Volumes ONTAP の健全性とパフォーマンスを把握できます。
+    tags: all, monitoring
+  - title: オンプレミスの ONTAP クラスタ
+    icon: "./media/icon-onprem.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-ontap-onprem/index.html
+    summary: ハイブリッドクラウド全体にわたって NetApp AFF システムと FAS システムを管理できます。
+    tags: all, storage
+  - title: ランサムウェアからの保護
+    icon: "./media/icon-ransomware.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-ransomware/index.html
+    summary: サイバー攻撃に対するデータの復元力を評価します。
+    tags: all, ransomware
+  - title: レプリケーション
+    icon: "./media/icon-replication.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-replication/index.html
+    summary: バックアップとディザスタリカバリをサポートするために、ストレージシステム間でデータをレプリケートします。
+    tags: all, replication, protection
+  - title: SnapCenter サービス
+    icon: "./media/icon-snapcenter.png"
+    url: https://docs.netapp.com/us-en/cloud-manager-snapcenter/index.html
+    summary: クラウドでのアプリケーションと整合性のあるデータ保護
+    tags: all, protection
