@@ -8,17 +8,11 @@
   <block id="14b05cf61f1aba58d38b393e69b69538" category="list-text">ネットアップサポートサイトのアカウントがない場合は、<block ref="0a8e82436ea73fe635862cfba3acf101" category="inline-link-rx"></block>。</block>
   <block id="0046efb3377274ff3215d4b30269809e" category="list-text">Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。</block>
   <block id="b50f0a46135bcb7083b1f2f82032fc26" category="inline-image-macro">[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです</block>
-  <block id="357be4e47fe6e7132dca092006062510" category="paragraph"><block ref="357be4e47fe6e7132dca092006062510" category="inline-image-macro-rx" type="image"></block></block>
   <block id="d17d6b5dafebab6b7659da8850737e70" category="list-text">[*NSS Management] &gt; [Add NSS Account*] をクリックします。</block>
   <block id="8aaf101e623c543c7eef3c65f6233366" category="list-text">メッセージが表示されたら、 [* Continue （続行） ] をクリックして Microsoft ログインページにリダイレクトします。</block>
   <block id="19d089db572ee6a1e154a0c9c9e57bfd" category="paragraph">ネットアップは、サポートとライセンスに固有の認証サービスのアイデンティティプロバイダとして Microsoft Azure Active Directory を使用しています。</block>
   <block id="465ec6d5eafa3524c948c99d8bfcd306" category="list-text">ログインページで、ネットアップサポートサイトの登録 E メールアドレスとパスワードを入力して認証プロセスを実行します。</block>
   <block id="f5fb4199485234c409525f430b737010" category="paragraph">Cloud Manager で NSS アカウントを使用することができます。</block>
-  <block id="56adf724101d4208ec84510dd5141cbe" category="paragraph">アカウントに関する次の要件に注意してください。</block>
-  <block id="0f0a0d646a020cf3a65ce82ada4cfb01" category="list-text">お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。</block>
-  <block id="f35b3071eb18e73b5274b2d3930c1cec" category="list-text">ノードベースの BYOL システムを導入する場合は、次の点に注意してください。</block>
-  <block id="4f67a838013dae97fbc2ef8c52275e5d" category="list-text">BYOL システムのシリアル番号にアクセスする権限がアカウントに必要です。</block>
-  <block id="920eb18d0b8767d6fc05b934ad81e34b" category="list-text">セキュアな BYOL サブスクリプションを購入した場合は、セキュアな NSS アカウントが必要です。</block>
   <block id="fc65ebd4739f2f8ca46062a8280faea9" category="section-title">アカウントを登録してサポートを受けてください</block>
   <block id="3e080914efe0d0ca025439fbb68d437f" category="paragraph">サポートの登録は、 Cloud Manager のサポートダッシュボードで実行できます。</block>
   <block id="fb07bf6b7698dbe934b8b2164d915484" category="list-text">[* リソース ] タブで、 [* サポートに登録 * ] をクリックします。</block>
@@ -103,4 +97,6 @@
   <block id="05ccfbea6601dcca671775f24a6b14d3" category="sidebar">コードサンプル</block>
   <block id="dc21b082b0947a93d387b8c7e8f89ee5" category="sidebar">データストレージ</block>
   <block id="396928510e06818ef017921022cce2af" category="sidebar">データの階層化</block>
+  <block id="868d9aa88f16ea923af1d15eac5d2647" category="paragraph"><block ref="868d9aa88f16ea923af1d15eac5d2647" category="inline-image-macro-rx" type="image"></block></block>
+  <block id="b4c6a2f33e7b2a38495546b8d5cd8e84" category="paragraph">注：お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。</block>
 </blocks>

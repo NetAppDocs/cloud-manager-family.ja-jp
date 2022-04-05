@@ -13,7 +13,7 @@
 . ネットアップサポートサイトのアカウントがない場合は、 https://register.netapp.com/register/start["1 名で登録します"^]。
 . Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
 +
-image:screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
 . [*NSS Management] > [Add NSS Account*] をクリックします。
 . メッセージが表示されたら、 [* Continue （続行） ] をクリックして Microsoft ログインページにリダイレクトします。
@@ -25,17 +25,7 @@ image:screenshot-help-support.png["[ ヘルプ ] メニューのスクリーン�
 Cloud Manager で NSS アカウントを使用することができます。
 
 +
-アカウントに関する次の要件に注意してください。
-
-+
-** お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。
-** ノードベースの BYOL システムを導入する場合は、次の点に注意してください。
-+
-*** BYOL システムのシリアル番号にアクセスする権限がアカウントに必要です。
-*** セキュアな BYOL サブスクリプションを購入した場合は、セキュアな NSS アカウントが必要です。
-
-
-
+注：お客様レベルのアカウントである必要があります（ゲストや一時アカウントは使用できません）。
 
 
 
@@ -48,7 +38,7 @@ Cloud Manager で NSS アカウントを使用することができます。
 .手順
 . Cloud Manager コンソールの右上にあるヘルプアイコンをクリックし、 * Support * を選択します。
 +
-image:screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
+image:https://raw.githubusercontent.com/NetAppDocs/cloud-manager-family/main/media/screenshot-help-support.png["[ ヘルプ ] メニューのスクリーンショット。サポートは最初に表示されるオプションです"]
 
 . [* リソース ] タブで、 [* サポートに登録 * ] をクリックします。
 . 登録する NSS 資格情報を選択し、 * 登録 * をクリックします。
