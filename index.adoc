@@ -6,6 +6,7 @@ summary: Cloud Manager は、 IT エキスパートとクラウドアーキテ�
 ---
 = Cloud Manager のドキュメント
 :hardbreaks:
+:allow-uri-read: 
 :nofooter: 
 :icons: font
 :linkattrs: 
